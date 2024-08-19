@@ -1,0 +1,23 @@
+.profile-form {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .item {
+    margin-top: 5px;
+  }
+  
+  .item input:focus {
+    outline: none;
+  }
+  
+  .profile-button {
+    outline: none;
+    border: 1px solid black;
+    background: none;
+    padding: 6px 12px;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }

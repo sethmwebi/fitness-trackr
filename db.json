@@ -1,0 +1,32 @@
+{
+  "distances": [
+    {
+      "id": "1",
+      "user-id": "6fghh6",
+      "date": "12/8/2024",
+      "distance": 34,
+      "time_spent": 230
+    },
+    {
+      "id": "8591",
+      "userid": "tus567",
+      "date": "2024-08-17T21:42:07.505Z",
+      "distance": 0,
+      "time_spent": 84
+    },
+    {
+      "id": "11f7",
+      "userid": "tus567",
+      "date": "2024-08-17T21:42:46.980Z",
+      "distance": 0,
+      "time_spent": 27
+    },
+    {
+      "id": "ffe4",
+      "userid": "tus567",
+      "date": "2024-08-17T21:44:13.769Z",
+      "distance": 0,
+      "time_spent": 3
+    }
+  ]
+}

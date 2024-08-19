@@ -1,0 +1,356 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+  --lavender-blush: #f7edf0ff;
+--tea-rose-red: #f4cbc6ff;
+--melon: #f4afabff;
+--vanilla: #f4eea9ff;
+--icterine: #f4f482ff;
+}
+.dashboard{
+  background-color: var(--lavender-blush);
+  min-height:100vh ;
+  padding: 10px;
+}
+
+/* Navbar */
+header{
+  margin: 10px;
+  background-color: white;
+  display: flex;
+  width: fit-content;
+  border-radius: 20px;
+
+}
+.profile-icon{
+  margin: 5px 20px;
+  background-color: var(--icterine);
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  /* padding-top: 7px; */
+  font-size: 34px;
+  border: 1px solid black;
+
+}
+.profile{
+  position: relative;
+}
+.profile-details{
+  position: absolute;
+  margin: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+
+}
+.profile-details h3{
+  width: 200px;
+  height: 100px;
+  background-color: var(--melon);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 15px;
+}
+.profile-details h2{
+  padding-top: 7px;
+}
+.profile-details p{
+  background-color: var(--icterine);
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: fit-content;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.profile-details button{
+  border: 1px solid black;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+}
+.profile-details button:hover{
+  background-color: white;
+  color: black;
+}
+nav{
+  padding: 14px 10px;
+}
+nav .link-list{
+  text-decoration: none;
+  color: black;
+  margin: 7px;
+
+}
+nav .link-list:hover{
+  font-weight: 700;
+  transition: .4s;
+}
+/* Dashboard Tabs */
+.dashboard-tabs{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 10px;
+
+}
+.totaldistance h2{
+  font-size: 25px !important;
+
+}
+.single-tab{
+  background-color: white;
+  width: 30%;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
+  margin: 10px;
+  min-width: 300px;
+}
+.single-tab .tab-title{
+  background-color: var(--icterine);
+  width: fit-content;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 10px;
+  border-radius: 20px;
+}
+.single-tab .info h2{
+  font-size: 45px;
+  text-align: right;
+}
+.single-tab .info p{
+  font-size: 13px;
+}
+.single-tab .info span{
+  font-size: 15px;
+}
+.bar-graphs{
+  display: flex;
+}
+.bar-graphs .singleBar{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px;
+}
+.bar-graphs .singleBar>div{
+  /* height: 100px; */
+  width: 20px;
+  background-color: black;
+  border-radius: 10px;
+}
+/* Activity Tracker */
+
+.tab-button{
+  font-size: 70px;
+  background-color: white;
+  height: 80px;
+  width: 80px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+}
+.activity-page{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+.activity-page .actions{
+  position: absolute;
+  bottom:40px;
+  right: 100px;
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+
+
+}
+/* Distance Finder */
+.distance-finder{
+  background-color: var(--lavender-blush);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.distance-finder img{
+  height: 300px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+.duration p{
+  color: grey;
+  text-align: center;
+
+}
+.duration{
+  margin: 10px;
+}
+.duration h3{
+  font-size: 35px;
+}
+.distance p{
+  color: grey;
+  text-align: center;
+}
+.distance{
+  margin: 10px;
+}
+.speed{
+  margin: 10px;
+  text-align: center;
+}
+.distance h3{
+  font-size: 80px;
+  /* background-color: var(--melon); */
+  border-radius: 10px;
+  padding: 10px;
+}
+.activity-page .single-action{
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.activity-page .single-action p{
+  font-size: 15px;
+}
+.distance-finder .buttons{
+  display: flex;
+}
+.distance-finder .buttons button{
+  height: 50px;
+  min-width: 150px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px;
+  font-size: 20px;
+}
+.pause{
+  background-color: rgba(255, 166, 0, 0.356);
+  color: orangered;
+}
+.play{
+  background-color: rgba(81, 255, 0, 0.356);
+  color: green;
+}
+.end{
+  background-color: rgba(0, 4, 255, 0.356);
+  color: blue;
+}
+
+/* Modal */
+.modal-container{
+  background-color: rgba(0, 0, 0, 0.144);
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.modal-container .modal{
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.modal-container .loader-icon{
+  width: 70px;
+  height: 70px;
+}
+.modal button{
+  background-color: green;
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+.distance-info h2{
+  font-size: 45px !important;
+}
+
+/* Distance Today */
+.fill-bar{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.fill-bar .bar-2{
+  margin: 10px;
+  width:80px;
+  height: 102px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+}
+.fill-bar .bar-2 .progress{
+  position: absolute;
+  /* height: 100px; */
+  width: 100%;
+  bottom: 0;
+  background-color:var(--melon);
+  border-radius:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fill-bar span{
+  font-weight: 700
+}
+.today-distance{
+  text-align: center;
+}
+.today-distance span{
+  font-weight: 700
+}
+.pie-chart{
+  margin: 0 auto;
+}
+@media only screen and (max-width:1000px) and (min-width:768px) {
+.single-tab{
+  width: 44%;
+}
+}
+@media only screen and (max-width:768px) {
+  .dashboard-tab{
+    flex-direction: column;
+  }
+  .single-tab{
+    width: 100%;
+  }
+  .bar-graphs{
+    justify-content: center;
+  }
+  .bar-graphs .singleBar{
+    width: 18px;
+    flex-wrap: nowrap;
+  }
+  .distance-finder img{
+  width: 100%;
+}
+
+  
+}
